@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cl.mauriciocarreno.test1.BienvenidaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Bienvenido!"
+                android:id="@+id/usuarioTV"
+                android:textColor="@android:color/primary_text_dark"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/formularioFragment"
+        android:name="cl.mauriciocarreno.test1.FormularioFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_formulario"/>
+
+</LinearLayout>
