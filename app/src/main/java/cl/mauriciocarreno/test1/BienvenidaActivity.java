@@ -11,9 +11,9 @@ public class BienvenidaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida);
 
-        TextView bienvenido = findViewById(R.id.usuarioTV);
-        String Usuario = getIntent().getStringExtra("Nombre");
+        TextView welcome = findViewById(R.id.userTV);
+        String user = getIntent().getStringExtra("Name");
 
-        bienvenido.setText("Bienvenido " + Usuario + "!");
+        welcome.setText("Bienvenido " + user + "!");
     }
 }

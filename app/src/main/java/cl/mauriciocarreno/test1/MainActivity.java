@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText nombre = findViewById(R.id.nombreET);
-        final EditText contrasena = findViewById(R.id.contrasenaET);
+        final EditText name = findViewById(R.id.nameET);
+        final EditText password = findViewById(R.id.passwordET);
         Button login = findViewById(R.id.loginBtn);
 
         Switch switchButton = findViewById(R.id.switchBtn);
@@ -29,11 +29,11 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b == true)
                 {
-                    contrasena.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 }
                 else
                 {
-                    contrasena.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    password.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
             }
         });
@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String Nombre = nombre.getText().toString();
-                String Contrasena = contrasena.getText().toString();
+                String userName = name.getText().toString();
+                String userPassword = password.getText().toString();
 
                 Intent intentDatos = new Intent(getApplicationContext(), BienvenidaActivity.class);
-                intentDatos.putExtra("Nombre", Nombre);
-                intentDatos.putExtra("Contrasena", Contrasena);
+                intentDatos.putExtra("Name", userName);
+                intentDatos.putExtra("Password", userPassword);
                 startActivity(intentDatos);
             }
         });

@@ -16,9 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <CalendarView
+            android:id="@+id/calendarioRecordatorio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:firstDayOfWeek="2"
+            android:minDate="01/01/1960"></CalendarView>
+
         <Button
             android:text="Enviar"
-            android:id="@+id/enviarbtn"
+            android:id="@+id/sendBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/PrimaryButton"

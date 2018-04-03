@@ -17,7 +17,7 @@
 
             <TextView
                 android:text="Bienvenido!"
-                android:id="@+id/usuarioTV"
+                android:id="@+id/userTV"
                 android:textColor="@android:color/primary_text_dark"
                 android:gravity="center"
                 android:layout_width="wrap_content"
