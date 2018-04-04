@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="cl.mauriciocarreno.test1.BienvenidaActivity">
+    tools:context="cl.mauriciocarreno.test1.WelcomeActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -28,9 +28,9 @@
 
     <fragment
         android:id="@+id/formularioFragment"
-        android:name="cl.mauriciocarreno.test1.FormularioFragment"
+        android:name="cl.mauriciocarreno.test1.FormFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_formulario"/>
+        tools:layout="@layout/fragment_form"/>
 
 </LinearLayout>

@@ -16,13 +16,13 @@ import android.widget.Toast;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FormularioFragment extends Fragment {
+public class FormFragment extends Fragment {
 
     int day;
     int month;
     int year;
 
-    public FormularioFragment() {
+    public FormFragment() {
         // Required empty public constructor
     }
 
@@ -34,7 +34,7 @@ public class FormularioFragment extends Fragment {
 
 
 
-        return inflater.inflate(R.layout.fragment_formulario, container, false);
+        return inflater.inflate(R.layout.fragment_form, container, false);
     }
 
     @Override
@@ -43,7 +43,7 @@ public class FormularioFragment extends Fragment {
 
         Button sendBtn = view.findViewById(R.id.sendBtn);
 
-        CalendarView calendar = getView().findViewById(R.id.calendarioRecordatorio);
+        CalendarView calendar = getView().findViewById(R.id.reminderCalendar);
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {

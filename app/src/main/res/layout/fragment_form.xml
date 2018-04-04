@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormularioFragment">
+    tools:context=".FormFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,13 +11,13 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/nombreRecordatorioET"
+            android:id="@+id/reminderNameET"
             android:hint="Título"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <CalendarView
-            android:id="@+id/calendarioRecordatorio"
+            android:id="@+id/reminderCalendar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:firstDayOfWeek="2"

@@ -44,10 +44,13 @@ public class MainActivity extends AppCompatActivity {
                 String userName = name.getText().toString();
                 String userPassword = password.getText().toString();
 
-                Intent intentDatos = new Intent(getApplicationContext(), BienvenidaActivity.class);
-                intentDatos.putExtra("Name", userName);
-                intentDatos.putExtra("Password", userPassword);
-                startActivity(intentDatos);
+                if(!userName.equals("") && !userPassword.equals("")) {
+
+                    Intent intent = new Intent(getApplicationContext(), WelcomeActivity.class);
+                    intent.putExtra("Name", userName);
+                    intent.putExtra("Password", userPassword);
+                    startActivity(intent);
+                }
             }
         });
 
